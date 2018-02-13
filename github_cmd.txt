@@ -1,0 +1,162 @@
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 ~
+$ cd git
+bash: cd: git: No such file or directory
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 ~
+$ pwd
+/c/Users/NILOYDATTA
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 ~
+$ cd ..
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 /c/Users
+$ cd ..
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 /c
+$ pwd
+/c
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 /c
+$ cd git
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 /c/git
+$ ls
+DGitDema_12Feb18/
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 /c/git
+$ cd DGitDema_12Feb18
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 /c/git/DGitDema_12Feb18 (master)
+$ git branch
+* master
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 /c/git/DGitDema_12Feb18 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        less.exe.stackdump
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 /c/git/DGitDema_12Feb18 (master)
+$ git status -s
+ M README.md
+?? less.exe.stackdump
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 /c/git/DGitDema_12Feb18 (master)
+$ git add .
+warning: LF will be replaced by CRLF in less.exe.stackdump.
+The file will have its original line endings in your working directory.
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 /c/git/DGitDema_12Feb18 (master)
+$ git add .
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 /c/git/DGitDema_12Feb18 (master)
+$ git status -s
+M  README.md
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 /c/git/DGitDema_12Feb18 (master)
+$ git commit
+Aborting commit due to empty commit message.
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 /c/git/DGitDema_12Feb18 (master)
+$ git commit -m "Initail commit for test"
+[master 736f9bc] Initail commit for test
+ Committer: NILOY DATTA <nilodatt@in.ibm.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 /c/git/DGitDema_12Feb18 (master)
+$ git status -s
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 /c/git/DGitDema_12Feb18 (master)
+$ ^C
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 /c/git/DGitDema_12Feb18 (master)
+$  git config --global --edit
+hint: Waiting for your editor to close the file...
+q: not found
+
+shell returned 127
+
+Press ENTER or type command to continue
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 /c/git/DGitDema_12Feb18 (master)
+$  git config --global --edit
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 /c/git/DGitDema_12Feb18 (master)
+$ git config --global user.name “Niloy"
+> ^C
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 /c/git/DGitDema_12Feb18 (master)
+$ ^C
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 /c/git/DGitDema_12Feb18 (master)
+$ git config --global user.name "Niloy"
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 /c/git/DGitDema_12Feb18 (master)
+$ git config --global user.email d.niloy@gmail.com
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 /c/git/DGitDema_12Feb18 (master)
+$ git status -s
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 /c/git/DGitDema_12Feb18 (master)
+$ git push
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 282 bytes | 282.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/NiloyDatta/DGitDema_12Feb18.git
+   2c18bdb..736f9bc  master -> master
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 /c/git/DGitDema_12Feb18 (master)
+$ git log
+commit 736f9bcc720693657b00cc95e1758f2be61fd8da (HEAD -> master, origin/master, origin/HEAD)
+Author: NILOY DATTA <nilodatt@in.ibm.com>
+Date:   Mon Feb 12 16:14:42 2018 +0530
+
+    Initail commit for test
+
+commit 2c18bdb1c5fc8a65c09da18ddf39db4aad7329c7
+Author: NiloyDatta <36404317+NiloyDatta@users.noreply.github.com>
+Date:   Mon Feb 12 16:00:14 2018 +0530
+
+    Initial commit
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 /c/git/DGitDema_12Feb18 (master)
+$ git log
+commit 736f9bcc720693657b00cc95e1758f2be61fd8da (HEAD -> master, origin/master, origin/HEAD)
+Author: NILOY DATTA <nilodatt@in.ibm.com>
+Date:   Mon Feb 12 16:14:42 2018 +0530
+
+    Initail commit for test
+
+commit 2c18bdb1c5fc8a65c09da18ddf39db4aad7329c7
+Author: NiloyDatta <36404317+NiloyDatta@users.noreply.github.com>
+Date:   Mon Feb 12 16:00:14 2018 +0530
+
+    Initial commit
+
+AzureAD+NILOYDATTA@LAPTOP-IH680VL8 MINGW64 /c/git/DGitDema_12Feb18 (master)
+$
